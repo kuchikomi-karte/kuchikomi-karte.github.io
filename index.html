@@ -1181,6 +1181,160 @@
     .karte-options { flex-direction: column; }
   }
 
+  /* ── PHILOSOPHY ── */
+  .philosophy {
+    background: var(--black);
+    color: var(--cream);
+    padding: 100px 40px;
+    text-align: center;
+  }
+
+  .philosophy .section-label {
+    color: var(--gold-light);
+  }
+
+  .philosophy-body {
+    max-width: 560px;
+    margin: 48px auto 0;
+    font-family: 'Shippori Mincho', serif;
+    font-size: clamp(14px, 2vw, 17px);
+    line-height: 2.4;
+    color: rgba(255,255,255,0.75);
+  }
+
+  .philosophy-body p {
+    margin-bottom: 32px;
+  }
+
+  .philosophy-closing {
+    color: var(--white);
+    font-size: clamp(16px, 2.4vw, 20px);
+    font-weight: 600;
+    border-top: 1px solid rgba(154,123,63,0.4);
+    padding-top: 32px;
+    margin-top: 8px;
+  }
+
+  /* ── FLOW ── */
+  .flow {
+    background: var(--cream);
+    padding: 100px 40px;
+  }
+
+  .flow-steps {
+    max-width: 680px;
+    margin: 56px auto 0;
+  }
+
+  .flow-step {
+    display: grid;
+    grid-template-columns: 56px 1fr;
+    gap: 24px;
+    align-items: flex-start;
+  }
+
+  .flow-step-num {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--gold-light);
+    line-height: 1;
+    padding-top: 4px;
+  }
+
+  .flow-step-content h3 {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--black);
+    margin-bottom: 10px;
+    letter-spacing: 0.05em;
+  }
+
+  .flow-step-content p {
+    font-size: 13px;
+    color: var(--gray);
+    line-height: 2;
+  }
+
+  .flow-connector {
+    width: 1px;
+    height: 40px;
+    background: var(--gold-light);
+    margin: 16px 0 16px 27px;
+    opacity: 0.4;
+  }
+
+  /* ── TARGET ── */
+  .target {
+    background: var(--white);
+    padding: 100px 40px;
+  }
+
+  .target-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    max-width: 760px;
+    margin: 56px auto 0;
+  }
+
+  @media (max-width: 640px) {
+    .target-grid { grid-template-columns: 1fr; }
+    .flow-step { grid-template-columns: 40px 1fr; }
+  }
+
+  .target-card {
+    padding: 40px 32px;
+  }
+
+  .target-card.fit {
+    background: var(--cream);
+    border: 1px solid var(--gray-light);
+  }
+
+  .target-card.notfit {
+    background: var(--black);
+    border: 1px solid var(--black);
+  }
+
+  .target-card-label {
+    font-size: 10px;
+    letter-spacing: 0.25em;
+    color: var(--gold-light);
+    display: block;
+    margin-bottom: 24px;
+  }
+
+  .target-list {
+    list-style: none;
+    font-size: 13px;
+    line-height: 2.6;
+  }
+
+  .target-card.fit .target-list {
+    color: var(--black);
+  }
+
+  .target-card.notfit .target-list {
+    color: rgba(255,255,255,0.6);
+  }
+
+  .target-list li::before {
+    content: '✦ ';
+    color: var(--gold-light);
+    font-size: 10px;
+  }
+
+  .target-note {
+    font-size: 12px;
+    color: rgba(255,255,255,0.45);
+    line-height: 2;
+    margin-top: 24px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 20px;
+  }
+
 </style>
 </head>
 <body>
@@ -1254,6 +1408,130 @@
         そこに、次の一手がある。
       </p>
       <span class="truth-attr">― 黒川聖羅（ai×me lab 経営・マーケティングアドバイザー）</span>
+    </div>
+  </div>
+</section>
+
+<!-- PHILOSOPHY -->
+<section class="philosophy">
+  <div class="container">
+    <span class="section-label reveal">Philosophy</span>
+
+    <div class="philosophy-body reveal">
+      <p>口コミは、客からの経営レポートだ。</p>
+      <p>
+        満足した客は、何も言わずに去る。<br>
+        わざわざ書いてくれた言葉には、<br>
+        あなたの店への期待と、失望と、<br>
+        改善のヒントが詰まっている。
+      </p>
+      <p>
+        自動返信とは、そのレポートを<br>
+        読まずに「既読」だけつけることだ。
+      </p>
+      <p>
+        返信文より先に、必要なことがある。<br>
+        読むこと。気づくこと。動くこと。
+      </p>
+      <p>
+        難しいことではない。<br>
+        5分のルーティンを業務に取り入れるだけでいい。
+      </p>
+      <p class="philosophy-closing">
+        口コミから業務改善へ、仕組みで繋ぐ。<br>
+        それが口コミ経営カルテだ。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- FLOW -->
+<section class="flow">
+  <div class="container">
+    <span class="section-label reveal">How it works</span>
+    <h2 class="section-title reveal">使い方の流れ</h2>
+
+    <div class="flow-steps reveal">
+
+      <div class="flow-step">
+        <div class="flow-step-num">01</div>
+        <div class="flow-step-content">
+          <h3>返信する</h3>
+          <p>口コミが届いたら、AIが返信案を生成。コピーして投稿するだけ。「返信しなきゃ」という重さをなくす。</p>
+        </div>
+      </div>
+
+      <div class="flow-connector"></div>
+
+      <div class="flow-step">
+        <div class="flow-step-num">02</div>
+        <div class="flow-step-content">
+          <h3>読む</h3>
+          <p>毎週、簡易レポートが届く。今週の口コミを、感情ではなくデータとして見る。5分で、店の状態が把握できる。</p>
+        </div>
+      </div>
+
+      <div class="flow-connector"></div>
+
+      <div class="flow-step">
+        <div class="flow-step-num">03</div>
+        <div class="flow-step-content">
+          <h3>理解する</h3>
+          <p>毎月、黒川レポートが届く。蓄積されたデータから構造を読み解く。なぜ同じ問題が繰り返されるのか、見えてくる。</p>
+        </div>
+      </div>
+
+      <div class="flow-connector"></div>
+
+      <div class="flow-step">
+        <div class="flow-step-num">04</div>
+        <div class="flow-step-content">
+          <h3>相談する</h3>
+          <p>
+            レポートを読んで終わりにしない。<br>
+            口コミ・経営相談では、次のアクションを一緒に決める。構造を変えることが、口コミを変えるからだ。
+          </p>
+          <p style="margin-top:12px; font-size:12px; color:var(--gray);">
+            苦情対応の迷い、経営の悩み、気になることはいつでも持ち込んでいい。
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TARGET -->
+<section class="target">
+  <div class="container">
+    <span class="section-label reveal">For whom</span>
+    <h2 class="section-title reveal">こんな方へ</h2>
+
+    <div class="target-grid reveal">
+
+      <div class="target-card fit">
+        <span class="target-card-label">向いている方</span>
+        <ul class="target-list">
+          <li>口コミを放置してしまっている</li>
+          <li>返信しているのに改善されない</li>
+          <li>口コミから何を読み取ればいいかわからない</li>
+          <li>データをもとに経営判断をしたい</li>
+        </ul>
+      </div>
+
+      <div class="target-card notfit">
+        <span class="target-card-label">向いていない方</span>
+        <ul class="target-list">
+          <li>口コミ対応を完全自動化だけ求める方</li>
+          <li>返信文だけあればいい方</li>
+          <li>レポートを読む時間がない方</li>
+        </ul>
+        <p class="target-note">
+          口コミを「処理」ではなく「経営に活かす」<br>
+          その意志がある方のためのサービスです。
+        </p>
+      </div>
+
     </div>
   </div>
 </section>
