@@ -1335,6 +1335,44 @@
     padding-top: 20px;
   }
 
+  /* ── HEADER BTN KARTE ── */
+  .header-btn.karte {
+    background: var(--gold);
+    color: var(--black);
+    border: 1px solid var(--gold);
+    padding: 8px 18px;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-decoration: none;
+    transition: all 0.25s;
+  }
+  .header-btn.karte:hover {
+    background: var(--gold-light);
+    border-color: var(--gold-light);
+  }
+
+  /* ── PRICE PLAN FEATURE NOTE ── */
+  .price-plan-feature-note {
+    font-size: 12px;
+    color: var(--gold-light);
+    line-height: 2;
+    text-align: center;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    letter-spacing: 0.03em;
+  }
+
+  /* ── SERVICE CARD SUB ── */
+  .service-card-sub {
+    font-size: 11px;
+    color: var(--gold-light);
+    line-height: 1.9;
+    margin-top: 12px;
+    border-top: 1px solid var(--gray-light);
+    padding-top: 12px;
+    letter-spacing: 0.03em;
+  }
+
 </style>
 </head>
 <body>
@@ -1344,6 +1382,7 @@
     <a href="#" class="site-header-brand">口コミ経営カルテ</a>
     <div class="site-header-actions">
       <a href="https://reviews-karte-next.vercel.app/login" class="site-header-login">会員ログイン</a>
+      <a href="#karte" class="header-btn karte">簡易カルテ診断</a>
       <a href="#karte" class="site-header-diagnosis">無料診断を受ける</a>
     </div>
   </div>
@@ -1560,8 +1599,9 @@
       <div class="service-card">
         <div class="service-card-num">03</div>
         <span class="tag">CONSULT</span>
-        <h3>口コミ・経営相談</h3>
+        <h3>口碑・経営相談</h3>
         <p>会員ページから口コミ対応・経営に関する相談が可能です。営業時間内24時間以内返信。困ったときの「壁打ち相手」としてご活用ください。</p>
+        <p class="service-card-sub">すべての返信・相談・レポートはログとして蓄積され、月次レポートの分析精度を高める資産になる。</p>
       </div>
     </div>
 
@@ -1670,40 +1710,22 @@
         <div class="price-plan-amount">¥9,800</div>
         <div class="price-plan-unit">/ 月（モニター3ヶ月間）</div>
         <ul class="price-plan-list">
-          <li>AI口コミ返信案の生成（無制限）</li>
-          <li>口コミ・経営相談（無制限）</li>
-          <li>月次 黒川レポート</li>
+          <li>AI口コミ返信案の生成（月20件まで）</li>
+          <li>口碑・経営相談（無制限）</li>
+          <li>週間 簡易レポート（自動生成）</li>
+          <li>月次 黒川レポート（監修付き）</li>
+          <li>口コミ・対応ログの蓄積と分析強化</li>
         </ul>
+        <p class="price-plan-feature-note">
+          返信・相談・レポートの履歴をすべて蓄積。<br>
+          データが積み上がるほど、分析精度が上がり、<br>
+          経営改善のスピードが加速する。
+        </p>
         <a href="https://reviews-karte-next.vercel.app/register" class="price-plan-btn primary">
           いますぐ申し込む
         </a>
       </div>
 
-    </div>
-      <div class="price-type-card center">
-        <span class="price-type-badge">RECOMMEND</span>
-        <span class="price-type-tag">TYPE B</span>
-        <div class="price-type-name">レポート強化</div>
-        <div class="price-type-sub">スタンダードの機能に加え、月次黒川レポートをより詳細な分析版でお届けします。</div>
-        <ul class="price-type-list">
-          <li>AI口コミ返信案の生成（月20件）</li>
-          <li>返信案の確認・コピー利用</li>
-          <li>詳細版 月次黒川レポート</li>
-          <li>LINEサポート</li>
-        </ul>
-      </div>
-
-      <div class="price-type-card">
-        <span class="price-type-tag">TYPE C</span>
-        <div class="price-type-name">ライト</div>
-        <div class="price-type-sub">AI返信案の生成と月次レポートのみ。LINEサポートなし。まずは試したい方へ。</div>
-        <ul class="price-type-list">
-          <li>AI口コミ返信案の生成（月20件）</li>
-          <li>月次 黒川レポート</li>
-          <li>LINEサポートなし</li>
-          <li>投稿はオーナー様ご自身で実施</li>
-        </ul>
-      </div>
     </div>
 
     <p class="price-note reveal">
