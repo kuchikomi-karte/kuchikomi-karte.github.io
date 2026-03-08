@@ -674,6 +674,37 @@
     color: var(--gold-light);
   }
 
+  .price-register-wrap {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .price-register-btn {
+    display: inline-block;
+    padding: 18px 72px;
+    background: var(--gold);
+    color: var(--black);
+    border: 1px solid var(--gold);
+    font-size: 14px;
+    letter-spacing: 0.2em;
+    text-decoration: none;
+    transition: all 0.25s;
+    font-family: 'Noto Sans JP', sans-serif;
+  }
+
+  .price-register-btn:hover {
+    background: var(--gold-light);
+    border-color: var(--gold-light);
+  }
+
+  .price-register-note {
+    font-size: 11px;
+    color: var(--gray);
+    margin-top: 16px;
+    line-height: 2;
+    letter-spacing: 0.05em;
+  }
+
   /* ── FAQ ── */
   .faq {
     background: var(--cream);
@@ -1672,9 +1703,6 @@
           <li>口コミ・経営相談（月1回まで）</li>
           <li>黒川レポートなし</li>
         </ul>
-        <a href="https://reviews-karte-next.vercel.app/register" class="price-plan-btn outline">
-          無料で始める
-        </a>
       </div>
 
       <!-- プレミアムプラン -->
@@ -1697,11 +1725,18 @@
           データが積み上がるほど、分析精度が上がり、<br>
           経営改善のスピードが加速する。
         </p>
-        <a href="https://reviews-karte-next.vercel.app/register" class="price-plan-btn primary">
-          いますぐ申し込む
-        </a>
       </div>
 
+    </div>
+
+    <div class="price-register-wrap">
+      <a href="https://reviews-karte-next.vercel.app/register" class="price-register-btn">
+        会員登録（無料）
+      </a>
+      <p class="price-register-note">
+        登録後、フリープランでご利用開始。<br>
+        プレミアムプランへのアップグレードはマイページから。
+      </p>
     </div>
 
     <p class="price-note reveal">
@@ -1710,15 +1745,6 @@
       ※ 契約時にサービス内容・データ利用についての同意書を締結します。<br>
       ※ モニター枠は3社限定。枠が埋まり次第、通常価格（¥19,800/月）に移行します。
     </p>
-
-    <div style="text-align:center; margin-top:48px;">
-      <a href="https://reviews-karte-next.vercel.app/register" class="btn-primary">
-        いますぐ申し込む（新規登録）
-      </a>
-      <p style="font-size:11px; color:var(--gray); margin-top:16px; letter-spacing:0.05em;">
-        登録後すぐにサービスをご利用いただけます
-      </p>
-    </div>
   </div>
 </section>
 
